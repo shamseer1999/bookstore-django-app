@@ -1,0 +1,17 @@
+{% extends "mngr/template.html" %}
+
+{% block content %}
+<h1 class="mb-4">Admin Dashboard</h1>
+<div class="row">
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body text-dark">
+                <h5 class="card-title">Total Admins <i class="fas fa-users" style="float:right"></i></h5>
+                
+                <p class="card-text"><b>{{ admins }}</b></p>
+            </div>
+        </div>
+    </div>
+    
+</div>
+{% endblock content %}
