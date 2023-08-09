@@ -10,7 +10,7 @@
 <body class="bg-secondary text-light">
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="{% url 'mngr_home'%}">
                 <i class="fas fa-cogs"></i> Bookstore Dashboard
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,10 +22,10 @@
                         <a class="nav-link" href="{% url 'mngr_home'%}"><i class="fas fa-home"></i> Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-users"></i> Admins</a>
+                        <a class="nav-link" href="{% url 'admins_list' %}"><i class="fas fa-users"></i> Admins</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-book"></i> Books</a>
+                        <a class="nav-link" href="{% url 'books_list' %}"><i class="fas fa-book"></i> Books</a>
                     </li>
                 </ul>
             </div>
@@ -50,5 +50,6 @@
     <div class="container mt-5">
         {% block content %}{% endblock content %}
     </div>
+
 </body>
 </html>

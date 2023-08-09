@@ -1,0 +1,39 @@
+{% extends "mngr/template.html" %}
+
+{% block content %}
+<div class="card">
+    <div class="card-header text-dark">
+        <h4>Admins List</h4>
+      </div>
+    <div class="card-body">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Sl.No</th>
+                <th scope="col">Name</th>
+                <th scope="col">Username</th>
+                <th scope="col">Phone</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% if admins %}
+              {% for item in admins %}
+                <tr>
+                    <td>{{ forloop.counter}}</td>
+                    <td>{{ item.name }}</td>
+                    <td>{{ item.username }}</td>
+                    <td>{{ item.phone }}</td>
+                    <td>{{ item.get_status_display }}</td>
+                </tr>
+              {% endfor %}
+              {% else %}
+              <tr>
+                <td colspan="4">No record found!</td>
+              </tr>
+              {% endif %}
+            </tbody>
+          </table>
+    </div>
+  </div>
+{% endblock %}

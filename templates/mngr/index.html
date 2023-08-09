@@ -4,7 +4,7 @@
 <h1 class="mb-4">Admin Dashboard</h1>
 <div class="row">
     <div class="col-md-3">
-        <a href="" class="text-decoration-none">
+        <a href="{% url 'admins_list' %}" class="text-decoration-none">
             <div class="card">
                 <div class="card-body text-dark">
                     <h5 class="card-title">Total Admins <i class="fas fa-users" style="float:right"></i></h5>
@@ -16,7 +16,7 @@
         </a>
     </div>
     <div class="col-md-3">
-        <a href="" class="text-decoration-none">
+        <a href="{% url 'books_list' %}" class="text-decoration-none">
             <div class="card">
                 <div class="card-body text-dark">
                     <h5 class="card-title">Total Books <i class="fas fa-book" style="float:right"></i></h5>
