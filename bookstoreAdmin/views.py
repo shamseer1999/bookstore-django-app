@@ -8,8 +8,10 @@ class HomeListView(View):
     
     def get(self,request):
         admins = Admin.objects.all()
+        books = Book.objects.all()
         context = {
-            'admins' : admins.count()
+            'admins' : admins.count(),
+            'books' : books.count()
         }
         
         return render(request,'mngr/index.html',context)

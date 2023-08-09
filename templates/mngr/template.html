@@ -11,7 +11,7 @@
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <i class="fas fa-cogs"></i> Admin Dashboard
+                <i class="fas fa-cogs"></i> Bookstore Dashboard
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -19,16 +19,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-home"></i> Home</a>
+                        <a class="nav-link" href="{% url 'mngr_home'%}"><i class="fas fa-home"></i> Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-users"></i> Users</a>
+                        <a class="nav-link" href="#"><i class="fas fa-users"></i> Admins</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> Orders</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-box"></i> Products</a>
+                        <a class="nav-link" href="#"><i class="fas fa-book"></i> Books</a>
                     </li>
                 </ul>
             </div>
